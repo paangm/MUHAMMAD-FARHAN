@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "UserListApp",
+    "slug": "userlistapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "userlistapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.learning.userlist",
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyCdU1Huu5asxa31H8bObeXLYvR09qc0ffA"
+      }
+    },
+    "android": {
+      "package": "com.learning.userlist",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCdU1Huu5asxa31H8bObeXLYvR09qc0ffA"
+        }
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "828439cd-8b23-4bff-91c1-caee183a53e7"
+      }
+    },
+    "owner": "qoriib"
+  }
+}
